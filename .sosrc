@@ -1,0 +1,4 @@
+- pattern: src/(.*)\.hs
+  commands:
+  - stack build
+  - stack exec whileInterpreter --

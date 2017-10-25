@@ -6,4 +6,5 @@ x2 := x2 + 1;
 LOOP x3 DO
     x4 := x3 - 5
     DONE
-DONE
+DONE;
+x0 := x5 + 5
