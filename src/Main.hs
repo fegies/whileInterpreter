@@ -2,7 +2,6 @@ module Main(main) where
 
 import Parser(parseProgram)
 import Interpreter(interpret)
-import Text.Show.Pretty
 import System.Environment
 
 main = getArgs >>= parseArgs

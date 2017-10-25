@@ -17,7 +17,7 @@ executable whileInterpreter
   main-is:             Main.hs
   other-modules:       Parser, WhileAst, WhileDef, Interpreter
   -- other-extensions:
-  build-depends:       base >=4.9 && <4.10, parsec, split, text, pretty-show
+  build-depends:       base >=4.9 && <4.10, parsec
   hs-source-dirs:      src
   build-tools:         
   default-language:    Haskell2010
