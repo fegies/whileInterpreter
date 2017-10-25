@@ -24,7 +24,7 @@ interpretStep (Assign to var op const) state =
     let vv = getVal state (varToInt var)
         rv = case op of
             Plus -> vv + const
-            Minus -> vv - const
+            Minus -> if vv < const then 0 else vv - const
     in setVal state (varToInt to) rv
 interpretStep (Loop var ast) state = 
     let count = getVal state (varToInt var)
