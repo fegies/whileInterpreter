@@ -1,6 +1,6 @@
-module Interpreter(interpret) where
+module While.Interpreter(interpret) where
 
-import WhileAst
+import While.WhileAst
 
 type State = [(Integer,Integer)]
 

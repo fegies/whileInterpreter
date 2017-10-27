@@ -1,7 +1,7 @@
-module Parser(parseProgram) where
+module While.Parser(parseProgram) where
 
-import WhileAst
-import WhileDef
+import While.WhileAst
+import While.WhileDef
 import Text.Parsec
 import Text.Parsec.Char
 

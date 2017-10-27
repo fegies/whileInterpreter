@@ -1,4 +1,4 @@
-module WhileDef where
+module While.WhileDef where
 
 import Text.Parsec
 import Text.Parsec.Token

@@ -1,0 +1,19 @@
+digraph tumac {
+	"" [shape=none];
+	z_r [shape=circle];
+	z_0 [shape=circle];
+	z_l [shape=circle];
+	z_e [shape=doublecircle];
+
+	"" -> z_r;
+
+	z_r -> z_r [label="1,1,R"];
+	z_r -> z_r [label="0,0,R"];
+	z_r -> z_0 [label="☐,1,R"];
+
+	z_0 -> z_l [label="☐,0,L"];
+
+	z_l -> z_l [label="1,1,L"];
+	z_l -> z_l [label="0,0,L"];
+	z_l -> z_e [label="☐,☐,R"];
+}

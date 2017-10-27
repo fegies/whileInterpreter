@@ -15,7 +15,8 @@ cabal-version:       >=1.10
 
 executable whileInterpreter
   main-is:             Main.hs
-  other-modules:       Parser, WhileAst, WhileDef, Interpreter
+  other-modules:       While.Parser, While.WhileAst, While.WhileDef, While.Interpreter,
+                       Turing.Interpreter, Turing.Parser, Turing.TuringAst, Turing.TuringDef
   -- other-extensions:
   build-depends:       base >=4.9 && <4.10, parsec
   hs-source-dirs:      src

@@ -1,4 +1,4 @@
-module WhileAst where
+module While.WhileAst where
 
 data Ast
     = Assign Variable Variable Operator Constant
