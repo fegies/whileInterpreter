@@ -2,9 +2,9 @@
 
 x1 := x7 + 0;
 LOOP x1 DO
-x2 := x2 + 1;
-LOOP x3 DO
-    x4 := x3 - 5
-    DONE
-DONE;
+    x2 := x2 + 1;
+    LOOP x3 DO
+        x4 := x3 - 5
+    END
+END;
 x0 := x5 + 5

@@ -14,7 +14,7 @@ parseArgs (mode:file:params) = do
     case mode of
         "while" -> case W.parseProgram file cont of
             Left err -> print err
-            Right ast -> print $ W.interpret ast progargs
+            Right ast -> W.interpret ast progargs >>= print
         "turing" -> case T.parseProgram file cont of
             Left err -> print err
             Right ast -> do

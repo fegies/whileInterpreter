@@ -9,6 +9,6 @@ whileDef = emptyDef
             {
                 identStart = lower,
                 identLetter = letter <|> char '_' <|> digit,
-                reservedOpNames = ["+", "-", ":="],
-                reservedNames = ["WHILE", "LOOP", "DO", "DONE"]
+                reservedOpNames = ["+", "-", ":=", "*"],
+                reservedNames = ["WHILE", "LOOP", "DO", "END"]
             }

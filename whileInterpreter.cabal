@@ -18,8 +18,8 @@ executable whileInterpreter
   other-modules:       While.Parser, While.WhileAst, While.WhileDef, While.Interpreter,
                        Turing.Interpreter, Turing.Parser, Turing.TuringAst, Turing.TuringDef
   -- other-extensions:
-  build-depends:       base >=4.9 && <4.10, parsec
+  build-depends:       base >=4.9 && <4.10, parsec, containers
   hs-source-dirs:      src
   build-tools:         
   default-language:    Haskell2010
-  ghc-options:
+  ghc-options: -with-rtsopts=-M4G

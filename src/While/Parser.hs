@@ -24,13 +24,14 @@ loopParser = Loop
     <*> variableParser
     <* reserved "DO"
     <*> sequenceParser
-    <* reserved "DONE"
+    <* reserved "END"
 
 constantParser = integer
 
 operatorParser =
     (reservedOp "+" >> return Plus) <|>
-    (reservedOp "-" >> return Minus)
+    (reservedOp "-" >> return Minus) <|>
+    (reservedOp "*" >> return Mult)
 
 assignParser = Assign
     <$> variableParser
@@ -44,7 +45,7 @@ whileParser = While
     <*> variableParser
     <* reserved "DO"
     <*> sequenceParser
-    <* reserved "DONE"
+    <* reserved "END"
 
 sequenceParser = fmap (foldr1 Sequence) (semiSep1 astParser)
 

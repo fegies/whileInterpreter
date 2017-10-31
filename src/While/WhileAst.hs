@@ -13,4 +13,5 @@ type Constant = Integer
 data Operator
     = Plus
     | Minus
+    | Mult
     deriving(Show)
